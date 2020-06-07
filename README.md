@@ -1,6 +1,11 @@
 # Machine Learning : Linear Regression (MATLAB)
 This is an assignment for the Machine Learning course from Stanford on Coursera.
 
+
+## Purpose
+- Predicts profits for a food truck in different cities
+
+
 ## Feature(s)
 #### 1) One Variable
 #### 2) Multiple Variables (Cooming soon...)
@@ -11,13 +16,21 @@ This is an assignment for the Machine Learning course from Stanford on Coursera.
 - MATLAB 2018(b)
 
 
+## Dataset
+- ex1data1.txt
+
+
 ## Usage
 #### 1) Open MATLAB
 #### 2) Open the folder of this directory
-#### 3) In the terminal window, run
+#### 3) In the terminal window, execute the function name you like to run. For example:
 ```
 warmUpExercise
 ```
+
+
+## Development Flow
+#### 1) Data Visualization
 
 
 ## Result
