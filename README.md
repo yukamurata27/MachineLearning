@@ -45,6 +45,9 @@ warmUpExercise
 ## Development Flow (Multiple Variable)
 #### 1) Normalize features
 - For the faster convergence
+#### 2) Gradient Descent
+- Compute cost function J
+- Update theta to minimize J
 
 
 ## Result
