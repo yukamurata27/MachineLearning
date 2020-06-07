@@ -8,7 +8,7 @@ This is an assignment for the Machine Learning course from Stanford on Coursera.
 
 ## Feature(s)
 #### 1) One Variable
-#### 2) Multiple Variables (Cooming soon...)
+#### 2) Multiple Variables
 
 
 ## Environment
@@ -17,7 +17,8 @@ This is an assignment for the Machine Learning course from Stanford on Coursera.
 
 
 ## Dataset
-- ex1data1.txt
+- ex1data1.txt (one variable)
+- ex1data2.txt (two variables)
 
 
 ## Usage
@@ -38,6 +39,8 @@ warmUpExercise
 
 ![Surface plot of J](img/plot-J.jpg)
 ![Contour plot of J](img/contour-plot-J.jpg)
+#### 3) Normalize features
+
 
 ## Result
 ![Linear Regression Fit](img/linear-fit.jpg)
