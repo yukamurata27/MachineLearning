@@ -31,6 +31,7 @@ warmUpExercise
 
 ## Development Flow
 #### 1) Data Visualization
+![Scatter plot](img/data-plot.jpg)
 
 
 ## Result
