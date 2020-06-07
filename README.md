@@ -33,7 +33,7 @@ warmUpExercise
 #### 1) Data Visualization
 ![Scatter plot](img/data-plot.jpg)
 #### 2) Gradient Descent
-##### A) Compute cost function J
+- Compute cost function J
 
 
 ## Result
