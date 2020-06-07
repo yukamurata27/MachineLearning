@@ -31,7 +31,7 @@ warmUpExercise
 ```
 
 
-## Development Flow
+## Development Flow (One Variable)
 #### 1) Data Visualization
 ![Scatter plot](img/data-plot.jpg)
 #### 2) Gradient Descent
@@ -40,7 +40,11 @@ warmUpExercise
 
 ![Surface plot of J](img/plot-J.jpg)
 ![Contour plot of J](img/contour-plot-J.jpg)
-#### 3) Normalize features
+
+
+## Development Flow (Multiple Variable)
+#### 1) Normalize features
+- For the faster convergence
 
 
 ## Result
