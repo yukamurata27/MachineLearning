@@ -34,10 +34,13 @@ warmUpExercise
 ![Scatter plot](img/data-plot.jpg)
 #### 2) Gradient Descent
 - Compute cost function J
-
+- Update theta to minimize J
+![3D plot of J](img/plot-J.jpg)
+![Contour plot of J](img/contour-plot-J.jpg)
 
 ## Result
-Coming soon... 
+![Linear Regression Fit](img/linear-fit.jpg)
+
 
 [//]: # (![Result])
 
