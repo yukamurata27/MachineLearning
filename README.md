@@ -29,6 +29,12 @@ This is an assignment for the Machine Learning course from Stanford on Coursera.
 ```
 warmUpExercise
 ```
+```
+ex1
+```
+```
+ex1_multi
+```
 
 
 ## Development Flow (One Variable)
