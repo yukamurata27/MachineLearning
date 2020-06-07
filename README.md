@@ -2,11 +2,14 @@
 This is an assignment for the Machine Learning course from Stanford on Coursera.
 
 ## Feature(s)
-#### 1) One Variable/Feature
+#### 1) One Variable
+#### 2) Multiple Variables (Cooming soon...)
+
 
 ## Environment
 - macOS Catalina (version 10.15.4)
 - MATLAB 2018(b)
+
 
 ## Usage
 #### 1) Open MATLAB
@@ -16,10 +19,12 @@ This is an assignment for the Machine Learning course from Stanford on Coursera.
 warmUpExercise
 ```
 
+
 ## Result
 Coming soon... 
 
 [//]: # (![Result])
+
 
 ## Course Links
 1) Machine Learning by Stanford University on [Coursera](https://www.coursera.org/learn/machine-learning)
