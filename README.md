@@ -3,7 +3,8 @@ This is an assignment for the Machine Learning course from Stanford on Coursera.
 
 
 ## Purpose
-- Predicts profits for a food truck in different cities
+#### 1) Predicts profits for a food truck in different cities
+#### 2) Predicts housing price based on the size and the number of room in Portland, OR
 
 
 ## Feature(s)
@@ -17,8 +18,8 @@ This is an assignment for the Machine Learning course from Stanford on Coursera.
 
 
 ## Dataset
-- ex1data1.txt (one variable)
-- ex1data2.txt (two variables)
+#### 1) ex1data1.txt (one variable)
+#### 2) ex1data2.txt (two variables)
 
 
 ## Usage
