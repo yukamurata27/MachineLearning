@@ -54,6 +54,8 @@ ex1_multi
 #### 2) Gradient Descent
 - Compute cost function J
 - Update theta to minimize J
+#### 3) Tweak learning rate alpha
+![Convergence](img/convergence.jpg)
 
 
 ## Result
