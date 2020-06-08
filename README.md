@@ -51,7 +51,7 @@ ex1_multi
 ## Development Flow (Multiple Variable)
 #### 1) Normalize features
 - For the faster convergence
-#### 2) Gradient Descent
+#### 2) Gradient Descent (Iterative method)
 - Compute cost function J
 - Update theta to minimize J
 #### 3) Tweak learning rate alpha
@@ -61,6 +61,7 @@ ex1_multi
 ```
 price = [1, (1650-mu)/sigma, 3] * theta;
 ```
+#### 5) Also implement normal equation (Analytical method)
 
 
 ## Result
