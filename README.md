@@ -55,6 +55,9 @@ ex1_multi
 - Compute cost function J
 - Update theta to minimize J
 #### 3) Tweak learning rate alpha
+Good choices
+- alpha = 0.1
+- alpha = 0.3 (seen in the plot below)
 ![Convergence](img/convergence.jpg)
 #### 4) Now, predict the price of a 1650 sq-ft, 3 br house
 - Do not forget to normalize the feature!
@@ -62,6 +65,9 @@ ex1_multi
 price = [1, (1650-mu)/sigma, 3] * theta;
 ```
 #### 5) Also implement normal equation (Analytical method)
+```
+theta = pinv(X' * X) * X' * y;
+```
 
 
 ## Result
