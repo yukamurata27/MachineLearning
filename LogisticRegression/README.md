@@ -30,7 +30,7 @@ ex2_reg
 
 ## Development Flow (Logistic Regression)
 #### 1) Data Visualization
-[//]: # (![Scatter plot])
+[//]: # ([Scatter plot])
 
 
 ## Development Flow (Regularized Logistic Regressione)

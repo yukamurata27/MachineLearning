@@ -33,13 +33,13 @@ ex1_multi
 
 ## Development Flow (One Variable)
 #### 1) Data Visualization
-![Scatter plot](img/data-plot.jpg)
+[Scatter plot](img/data-plot.jpg)
 #### 2) Gradient Descent
 - Compute cost function J
 - Update theta to minimize J
 
-![Surface plot of J](img/plot-J.jpg)
-![Contour plot of J](img/contour-plot-J.jpg)
+[Surface plot of J](img/plot-J.jpg)
+[Contour plot of J](img/contour-plot-J.jpg)
 
 
 ## Development Flow (Multiple Variable)
@@ -53,7 +53,7 @@ Good choices:
 - alpha = 0.1
 - alpha = 0.3 (seen in the plot below)
 
-![Convergence](img/convergence.jpg)
+[Convergence](img/convergence.jpg)
 #### 4) Now, predict the price of a 1650 sq-ft, 3 br house
 - Do not forget to normalize the feature!
 ```
@@ -66,7 +66,7 @@ theta = pinv(X' * X) * X' * y;
 
 
 ## Result
-![Linear Regression Fit](img/linear-fit.jpg)
+[Linear Regression Fit](img/linear-fit.jpg)
 
 
 ## Assignment Link
