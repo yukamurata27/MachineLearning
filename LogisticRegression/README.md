@@ -18,11 +18,13 @@
 
 ## Usage
 #### 1) Open MATLAB
-#### 2) Open the folder of this directory
-#### 3) In the terminal window, execute the function name you like to run. For example:
+#### 2) Open the ex2 folder in MATLAB
+#### 3) In the terminal window, execute the function name you like to run.  
+Logistic regression:
 ```
 ex2
 ```
+Regularized logistic regression:
 ```
 ex2_reg
 ```

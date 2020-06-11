@@ -18,14 +18,17 @@
 
 ## Usage
 #### 1) Open MATLAB
-#### 2) Open the folder of this directory
-#### 3) In the terminal window, execute the function name you like to run. For example:
+#### 2) Open the ex1 folder in MATLAB
+#### 3) In the terminal window, execute the function name you like to run.  
+For example:
 ```
 warmUpExercise
 ```
+Linear regression with one variable:
 ```
 ex1
 ```
+Linear regression with multiple variables:
 ```
 ex1_multi
 ```
