@@ -3,6 +3,7 @@ This contains programming assignments for the Machine Learning course from Stanf
 
 ## Algorithms
 #### 1) Linear Regression
+#### 2) Logistic Regression
 
 ## Environment
 - macOS Catalina (version 10.15.4)
