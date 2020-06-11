@@ -39,7 +39,6 @@ Coming soon...
 
 ## Result
 Coming soon...  
-[//]: # (![Linear Regression Fit])
 
 
 ## Assignment Link
