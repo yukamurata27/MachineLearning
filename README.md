@@ -9,6 +9,7 @@ This contains programming assignments for the Machine Learning course from Stanf
 - MATLAB 2018(b)
 
 ## To-Do
+- [ ] Add mathematical formulas of each algorithm for better understanding
 - [ ] Apply regularization to gradient descent (linear regression)  
 - [ ] Apply regularization to normal equation  (linear regression)  
 
