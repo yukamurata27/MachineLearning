@@ -62,6 +62,7 @@ Good choices:
 ```
 price = [1, (1650-mu)/sigma, 3] * theta;
 ```
+where mu is a mean value and sigma is a standard deviation.
 #### 5) Also implement normal equation (Analytical method)
 ```
 theta = pinv(X' * X) * X' * y;
