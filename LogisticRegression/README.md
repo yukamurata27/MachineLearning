@@ -73,7 +73,8 @@ J = 1 / m * sum(- y .* log(h) - (1-y) .* log(1-h)) + lambda / (2*m) * sum(theta(
 grad = 1 / m * X' * (h - y) + [0; lambda / m * theta(2:end)];
 ```
 
-## Result
+
+## Results
 Logistic Regression:  
 ![Scatter plot](img/decision-boundary.jpg)
 
