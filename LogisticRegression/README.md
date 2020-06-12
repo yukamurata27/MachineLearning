@@ -67,7 +67,7 @@ Accuracy = 89.0%
 ![Scatter plot](img/data-plot2.jpg)
 #### 2) Feature Mapping
 - Linear decision boundary does not fit the dataset, so create more features.
-- Map the features into all polynomial terms of x1 and x2 up to the sixth power.
+- Map the features into all polynomial terms of *x1* and *x2* up to the sixth power.
 #### 3) Compute the cost function and gradient with regularization
 ```
 h = sigmoid(X * theta);
@@ -75,7 +75,7 @@ J = 1 / m * (-y' * log(h) - (1-y)' * log(1-h)) + lambda / (2*m) * sum(theta(2:en
 grad = 1 / m * X' * (h - y) + [0; lambda / m * theta(2:end)];
 ```
 #### 4) Find optimal learning parameters using fminunc
-Similar to Step 4 in Development Flow (Logistic Regression) above.  
+Similar to Step 4 in **Development Flow (Logistic Regression)** above.  
 See the result section below for the decision boundary.
 #### 5) Make predictions
 #### 6) Tweak lambda (regularization parameter)
