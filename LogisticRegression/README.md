@@ -48,12 +48,13 @@ J = 1 / m * sum(- y .* log(h) - (1-y) .* log(1-h));
 grad = 1 / m * X' * (h - y);
 ```
 #### 4) Find optimal learning parameters using fminunc
+See the result section below for the decision boundary.
 ```
 options = optimset('GradObj', 'on', 'MaxIter', 400);
 [theta, cost] = fminunc(@(t)(costFunction(t, X, y)), initial_theta, options);
 ```
 #### 5) Make predictions
-- Don't forget to use the sigmoid function!
+Don't forget to use the sigmoid function!
 ```
 p = round(sigmoid(X * theta));
 ```
@@ -64,6 +65,7 @@ Coming soon...
 
 
 ## Result
+Logistic Regression
 ![Scatter plot](img/decision-boundary.jpg)
 
 
