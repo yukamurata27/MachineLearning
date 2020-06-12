@@ -65,7 +65,7 @@ Coming soon...
 
 
 ## Result
-Logistic Regression
+Logistic Regression  
 ![Scatter plot](img/decision-boundary.jpg)
 
 
