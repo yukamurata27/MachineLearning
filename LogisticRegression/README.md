@@ -58,7 +58,9 @@ Don't forget to use the sigmoid function!
 ```
 p = round(sigmoid(X * theta));
 ```
-
+#### 6) Result
+Accuracy = 89.0%  
+![Decision boundary plot](img/decision-boundary.jpg)
 
 ## Development Flow (Regularized Logistic Regressione)
 #### 1) Data Visualization
@@ -72,14 +74,20 @@ h = sigmoid(X * theta);
 J = 1 / m * (-y' * log(h) - (1-y)' * log(1-h)) + lambda / (2*m) * sum(theta(2:end).^2);
 grad = 1 / m * X' * (h - y) + [0; lambda / m * theta(2:end)];
 ```
-
-
-## Results
-Logistic Regression:  
-![Scatter plot](img/decision-boundary.jpg)
-
-Regularized Logistic Regression:  
-![Scatter plot](img/decision-boundary2.jpg)
+#### 4) Find optimal learning parameters using fminunc
+Similar to Step 4 in Development Flow (Logistic Regression) above.  
+See the result section below for the decision boundary.
+#### 5) Make predictions
+#### 6) Tweak lambda (regularization parameter)
+Good lambda value is 1
+#### 7) Results
+Accuracy = 83.1%  
+Good prediction (lambda = 1):  
+![Decision boundary plot](img/decision-boundary2.jpg)
+Overfitting (lambda = 0):  
+![Decision boundary plot (overfitting)](img/overfitting.jpg)
+Underfitting (lambda = 100):  
+![Decision boundary plot (underfitting)](img/underfitting.jpg)
 
 
 ## Assignment Link
