@@ -61,12 +61,23 @@ p = round(sigmoid(X * theta));
 
 
 ## Development Flow (Regularized Logistic Regressione)
-Coming soon...
-
+#### 1) Data Visualization
+![Scatter plot](img/data-plot2.jpg)
+#### 2) Feature Mapping
+- Linear decision boundary does not fit the dataset, so create more features.
+- Map the features into all polynomial terms of x1 and x2 up to the sixth power.
+#### 3) Compute the cost function and gradient with regularization
+```
+h = sigmoid(X * theta);
+J = 1 / m * sum(- y .* log(h) - (1-y) .* log(1-h)) + lambda / (2*m) * sum(theta(2:end).^2);
+grad = 1 / m * X' * (h - y) + [0; lambda / m * theta(2:end)];
+```
 
 ## Result
 Logistic Regression:  
 ![Scatter plot](img/decision-boundary.jpg)
+Regularized Logistic Regression:  
+![Scatter plot](img/decision-boundary2.jpg)
 
 
 ## Assignment Link
