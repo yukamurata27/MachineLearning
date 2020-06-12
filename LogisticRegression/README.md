@@ -83,9 +83,9 @@ Good lambda value is 1
 #### 7) Results
 Accuracy = 83.1%  
 Good prediction (lambda = 1):  
-![Decision boundary plot](img/decision-boundary2.jpg)
+![Decision boundary plot](img/decision-boundary2.jpg)  
 Overfitting (lambda = 0):  
-![Decision boundary plot (overfitting)](img/overfitting.jpg)
+![Decision boundary plot (overfitting)](img/overfitting.jpg)  
 Underfitting (lambda = 100):  
 ![Decision boundary plot (underfitting)](img/underfitting.jpg)
 
