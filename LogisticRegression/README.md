@@ -1,6 +1,10 @@
 # Logistic Regression (MATLAB)
 
 
+## Dependency
+- Optimization Toolbox
+
+
 ## Purpose
 #### 1) Predicts university admission
 #### 2) Predicts QA test result of microchips from a fabrication plant
@@ -43,7 +47,12 @@ h = sigmoid(X * theta);
 J = 1 / m * sum(- y .* log(h) - (1-y) .* log(1-h));
 grad = 1 / m * X' * (h - y);
 ```
-
+#### 4) Find optimal learning parameters using fminunc
+```
+options = optimset('GradObj', 'on', 'MaxIter', 400);
+[theta, cost] = fminunc(@(t)(costFunction(t, X, y)), initial_theta, options);
+```
+![Scatter plot](img/decision-boundary.jpg)
 
 ## Development Flow (Regularized Logistic Regressione)
 Coming soon...
