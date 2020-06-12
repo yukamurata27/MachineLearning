@@ -76,6 +76,7 @@ grad = 1 / m * X' * (h - y) + [0; lambda / m * theta(2:end)];
 ## Result
 Logistic Regression:  
 ![Scatter plot](img/decision-boundary.jpg)
+
 Regularized Logistic Regression:  
 ![Scatter plot](img/decision-boundary2.jpg)
 
