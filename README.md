@@ -2,8 +2,9 @@
 This contains programming assignments for the Machine Learning course from Stanford University on Coursera.
 
 ## Algorithms
-#### 1) [Linear Regression](https://github.com/yukamurata27/MachineLearning/tree/master/LinearRegression)
-#### 2) [Logistic Regression](https://github.com/yukamurata27/MachineLearning/tree/master/LogisticRegression)
+#### 1) [Linear Regression](./LinearRegression)
+#### 2) [Logistic Regression](./LogisticRegression)
+#### 3) [Multi-class Classification and Neural Networks](./Multi-classClassification)
 
 ## Environment
 - macOS Catalina (version 10.15.4)
