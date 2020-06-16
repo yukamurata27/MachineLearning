@@ -33,6 +33,17 @@ ex3_nn
 ## Development Flow (Logistic Regression)
 #### 1) Data Visualization
 ![Input images](img/data-visualization.jpg)
+#### 2) Compute cost function J and gradient
+```
+h = sigmoid(X*theta);
+
+regularization = lambda / (2*m) * sum(theta(2:end).^2);
+J = sum(-y .* log(h) - (1-y) .* log(1-h)) / m + regularization;
+
+regularization = lambda / m * theta(2:end);
+grad = X' * (h - y) / m + [0; regularization];
+```
+
 
 ## Development Flow (Neural Network)
 TBA
