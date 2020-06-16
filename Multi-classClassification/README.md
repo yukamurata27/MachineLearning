@@ -43,7 +43,7 @@ J = sum(-y .* log(h) - (1-y) .* log(1-h)) / m + regularization;
 regularization = lambda / m * theta(2:end);
 grad = X' * (h - y) / m + [0; regularization];
 ```
-#### 3) Train for one-vs-all classification
+#### 3) Train one-vs-all classification
 ```
 % Set Initial theta
 initial_theta = zeros(n + 1, 1);
@@ -56,6 +56,10 @@ for c = 1:num_labels
     all_theta(c,:) = ...
         fmincg (@(t)(lrCostFunction(t, X, (y == c), lambda)), initial_theta, options);
 end
+```
+#### 4) Make predictions (return labels)
+```
+[val, p] = max(sigmoid(X * all_theta'), [], 2);
 ```
 
 
