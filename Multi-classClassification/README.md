@@ -78,7 +78,13 @@ h = sigmoid(a * Theta2');
 [~, p] = max(h, [], 2);
 ```
 #### 2) Result
-Accuracy = 97.52
+Accuracy = 97.52  
+Recognized as 3:
+![3](img/3.jpg)
+Recognized as 6:
+![6](img/6.jpg)
+Recognized as 9:
+![9](img/9.jpg)
 
 
 ## Assignment Link
