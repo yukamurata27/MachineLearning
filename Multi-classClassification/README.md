@@ -32,7 +32,7 @@ ex3_nn
 
 ## Development Flow (Logistic Regression)
 #### 1) Data Visualization
-
+![Input images](img/data-visualization.jpg)
 
 ## Development Flow (Neural Network)
 TBA
