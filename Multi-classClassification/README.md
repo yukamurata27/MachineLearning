@@ -43,6 +43,20 @@ J = sum(-y .* log(h) - (1-y) .* log(1-h)) / m + regularization;
 regularization = lambda / m * theta(2:end);
 grad = X' * (h - y) / m + [0; regularization];
 ```
+#### 3) Train for one-vs-all classification
+```
+% Set Initial theta
+initial_theta = zeros(n + 1, 1);
+
+% Set options for fminunc
+options = optimset('GradObj', 'on', 'MaxIter', 50);
+
+% Train for each label
+for c = 1:num_labels
+    all_theta(c,:) = ...
+        fmincg (@(t)(lrCostFunction(t, X, (y == c), lambda)), initial_theta, options);
+end
+```
 
 
 ## Development Flow (Neural Network)
