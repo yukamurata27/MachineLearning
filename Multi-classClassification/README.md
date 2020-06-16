@@ -2,8 +2,9 @@
 
 
 ## Purpose
-#### 1) Recognize handwritten digits (from 0 to 9) with Logistic Regression
-#### 2) Recognize handwritten digits (from 0 to 9) with Neural Network
+Implement one-vs-all classification algorithm to recognize handwritten digits (from 0 to 9) with two methods:
+#### 1) Logistic Regression
+#### 2) Neural Network
 
 
 ## Features
