@@ -66,7 +66,19 @@ Accuracy = 94.94
 
 
 ## Development Flow (Neural Network)
-TBA
+#### 1) Implement forward propagation
+For this assignment, use the pre-trained parameters (ex3weights.mat).
+```
+X = [ones(m,1) X];
+a = sigmoid(X * Theta1');
+
+a = [ones(m,1) a];
+h = sigmoid(a * Theta2');
+
+[~, p] = max(h, [], 2);
+```
+#### 2) Result
+Accuracy = 97.52
 
 
 ## Assignment Link
