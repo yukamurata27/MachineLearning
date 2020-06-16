@@ -61,6 +61,8 @@ end
 ```
 [val, p] = max(sigmoid(X * all_theta'), [], 2);
 ```
+#### 5) Result
+Accuracy = 94.94
 
 
 ## Development Flow (Neural Network)
