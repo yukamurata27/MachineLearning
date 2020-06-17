@@ -28,7 +28,7 @@ ex4
 ## Development Flow
 #### 1) Data Visualization
 ![Input images](img/data-visualization.jpg)
-#### 2) Compute cost function J
+#### 2) Compute cost function J (Feedforward propagation)
 ```
 % Format y (vector to matrix)
 y_mat = zeros(m, num_labels);
@@ -56,6 +56,10 @@ sum_Theta1 = sum(sum(Theta1(:,2:end).^2));
 sum_Theta2 = sum(sum(Theta2(:,2:end).^2));
 regularization = lambda / (2*m) * (sum_Theta1 + sum_Theta2);
 J = J + regularization;
+```
+#### 4) Compute sigmoid gradient
+```
+g = sigmoid(z) .* (1 - sigmoid(z));
 ```
 
 
