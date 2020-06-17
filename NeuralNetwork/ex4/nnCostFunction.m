@@ -57,7 +57,7 @@ m = size(X, 1);
 %               and Theta2_grad from Part 2.
 %
 
-% Convert format of y (int to vector)
+% Format y (vector to matrix)
 y_mat = zeros(m, num_labels);
 for i=1:m
     y_mat(i,y(i)) = 1;
@@ -78,7 +78,7 @@ h = sigmoid(a * Theta2'); % row = each example | col = h's for the example
 % Sum up all the errors between my output (h) and expected output
 J = 1 / m * sum(sum(-y_mat.*log(h)-(1-y_mat).*log(1-h)));
 
-% Add regularization term
+% Add regularization terms (do NOT include bias terms)
 sum_Theta1 = sum(sum(Theta1(:,2:end).^2));
 sum_Theta2 = sum(sum(Theta2(:,2:end).^2));
 regularization = lambda / (2*m) * (sum_Theta1 + sum_Theta2);

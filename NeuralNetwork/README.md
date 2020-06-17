@@ -28,6 +28,35 @@ ex4
 ## Development Flow
 #### 1) Data Visualization
 ![Input images](img/data-visualization.jpg)
+#### 2) Compute cost function J
+```
+% Format y (vector to matrix)
+y_mat = zeros(m, num_labels);
+for i=1:m
+    y_mat(i,y(i)) = 1;
+end
+
+% Feedforward propagation
+
+% From layer 1 (input) to layer 2 (hidden)
+X = [ones(m,1) X];
+a = sigmoid(X * Theta1'); % row = each example | col = a's for the example
+
+% From layer 2 (hidden) to layer 3 (output)
+a = [ones(m,1) a];
+h = sigmoid(a * Theta2'); % row = each example | col = h's for the example
+
+% Sum up all the errors between my output (h) and expected output
+J = 1 / m * sum(sum(-y_mat.*log(h)-(1-y_mat).*log(1-h)));
+```
+#### 3) Add regularization terms
+Do NOT include bias terms (1st columns)!  
+```
+sum_Theta1 = sum(sum(Theta1(:,2:end).^2));
+sum_Theta2 = sum(sum(Theta2(:,2:end).^2));
+regularization = lambda / (2*m) * (sum_Theta1 + sum_Theta2);
+J = J + regularization;
+```
 
 
 ## Assignment Link
