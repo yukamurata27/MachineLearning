@@ -57,6 +57,8 @@ m = size(X, 1);
 %               and Theta2_grad from Part 2.
 %
 
+% Part 1 %
+
 % Format y (vector to matrix)
 y_mat = zeros(m, num_labels);
 for i=1:m
@@ -83,6 +85,9 @@ sum_Theta1 = sum(sum(Theta1(:,2:end).^2));
 sum_Theta2 = sum(sum(Theta2(:,2:end).^2));
 regularization = lambda / (2*m) * (sum_Theta1 + sum_Theta2);
 J = J + regularization;
+
+% Part 2 %
+
 
 % You need to return the following variables correctly 
 Theta1_grad = zeros(size(Theta1));
