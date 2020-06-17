@@ -61,7 +61,12 @@ J = J + regularization;
 ```
 g = sigmoid(z) .* (1 - sigmoid(z));
 ```
-
+#### 5) Randomize initial weights
+Break symmetry.
+```
+epsilon_init = 0.12;
+W = rand(L_out, 1 + L_in) * 2 * epsilon_init - epsilon_init;
+```
 
 ## Assignment Link
 - [Neural Network Learning](https://www.coursera.org/learn/machine-learning/programming/AiHgN/neural-network-learning) 
