@@ -1,7 +1,7 @@
 # Logistic Regression (MATLAB)
 
 
-## Purpose
+## Purposes
 #### 1) Predicts university admission
 #### 2) Predicts QA test result of microchips from a fabrication plant
 

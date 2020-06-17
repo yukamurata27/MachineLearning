@@ -1,7 +1,7 @@
 # Linear Regression (MATLAB)
 
 
-## Purpose
+## Purposes
 #### 1) Predicts profits for a food truck in different cities
 #### 2) Predicts housing price based on the size and the number of room in Portland, OR
 

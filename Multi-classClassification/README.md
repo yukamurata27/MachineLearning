@@ -1,7 +1,7 @@
 # Multi-class Classification and Neural Networks (MATLAB)
 
 
-## Purpose
+## Purposes
 Implement one-vs-all classification algorithm to recognize handwritten digits (from 0 to 9) with two methods:
 #### 1) Logistic Regression
 #### 2) Neural Network
