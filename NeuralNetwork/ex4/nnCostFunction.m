@@ -24,11 +24,6 @@ Theta2 = reshape(nn_params((1 + (hidden_layer_size * (input_layer_size + 1))):en
 
 % Setup some useful variables
 m = size(X, 1);
-         
-% You need to return the following variables correctly 
-J = 0;
-Theta1_grad = zeros(size(Theta1));
-Theta2_grad = zeros(size(Theta2));
 
 % ====================== YOUR CODE HERE ======================
 % Instructions: You should complete the code by working through the
@@ -62,30 +57,31 @@ Theta2_grad = zeros(size(Theta2));
 %               and Theta2_grad from Part 2.
 %
 
+% Convert format of y (int to vector)
+y_mat = zeros(m, num_labels);
+for i=1:m
+    y_mat(i,y(i)) = 1;
+end
 
+% Feedforward propagation
+X = [ones(m,1) X];
+a = sigmoid(X * Theta1'); % row -> each example | col -> a's for hte example
 
+a = [ones(m,1) a];
+h = sigmoid(a * Theta2'); % row -> each example | col -> h's for hte example
 
+% No need to cleanup h
 
+% Sum up all the errors between my output (h) and expected output
+J = 1 / m * sum(sum(-y_mat.*log(h)-(1-y_mat).*log(1-h)));
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-% -------------------------------------------------------------
+% You need to return the following variables correctly 
+Theta1_grad = zeros(size(Theta1));
+Theta2_grad = zeros(size(Theta2));
 
 % =========================================================================
 
 % Unroll gradients
 grad = [Theta1_grad(:) ; Theta2_grad(:)];
-
 
 end
