@@ -5,6 +5,7 @@ This contains programming assignments for the Machine Learning course from Stanf
 #### 1) [Linear Regression](./LinearRegression)
 #### 2) [Logistic Regression](./LogisticRegression)
 #### 3) [Multi-class Classification and Neural Networks](./Multi-classClassification)
+#### 4) [Neural Network](./NeuralNetwork)
 
 ## Environment
 - macOS Catalina (version 10.15.4)
