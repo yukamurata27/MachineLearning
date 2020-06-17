@@ -89,7 +89,7 @@ J = J + regularization;
 % Part 2 %
 
 D1 = zeros(hidden_layer_size,1);
-D2 = zeros(hidden_layer_size,1);
+D2 = zeros(num_labels,1);
 
 % For each example
 for t = 1:m
@@ -117,8 +117,11 @@ for t = 1:m
     D2 = D2 + d3 * a2';
 end
 
-Theta1_grad = D1 / m;
-Theta2_grad = D2 / m;
+regularization = lambda / m * [zeros(hidden_layer_size,1) Theta1(:,2:end)];
+Theta1_grad = D1 / m + regularization;
+
+regularization = lambda / m * [zeros(num_labels,1) Theta2(:,2:end)];
+Theta2_grad = D2 / m + regularization;
 
 % =========================================================================
 

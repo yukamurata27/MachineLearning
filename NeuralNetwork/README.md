@@ -69,7 +69,7 @@ W = rand(L_out, 1 + L_in) * 2 * epsilon_init - epsilon_init;
 #### 6) Backpropagation
 ```
 D1 = zeros(hidden_layer_size,1);
-D2 = zeros(hidden_layer_size,1);
+D2 = zeros(num_labels,1);
 
 % For each example
 for t = 1:m
@@ -100,7 +100,24 @@ end
 Theta1_grad = D1 / m;
 Theta2_grad = D2 / m;
 ```
+#### 7) Add regularization terms
+```
+regularization = lambda / m * [zeros(hidden_layer_size,1) Theta1(:,2:end)];
+Theta1_grad = D1 / m + regularization;
 
+regularization = lambda / m * [zeros(num_labels,1) Theta2(:,2:end)];
+Theta2_grad = D2 / m + regularization;
+```
+#### 8) Visualize hidden units
+![Hidden Units](img/hidden-units.jpg)
+#### 9) Tweak lambda and number of iterations
+Good choices (accuracy = 98.8):
+```
+MaxIter = 100
+lambda = 0.3
+```
+#### 10) Result
+Accuracy = 98.8 (may vary due to randomized initialization)
 
 ## Assignment Link
 - [Neural Network Learning](https://www.coursera.org/learn/machine-learning/programming/AiHgN/neural-network-learning) 
