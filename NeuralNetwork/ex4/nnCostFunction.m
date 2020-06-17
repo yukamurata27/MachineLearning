@@ -65,10 +65,10 @@ end
 
 % Feedforward propagation
 X = [ones(m,1) X];
-a = sigmoid(X * Theta1'); % row -> each example | col -> a's for hte example
+a = sigmoid(X * Theta1'); % row = each example | col = a's for the example
 
 a = [ones(m,1) a];
-h = sigmoid(a * Theta2'); % row -> each example | col -> h's for hte example
+h = sigmoid(a * Theta2'); % row = each example | col = h's for the example
 
 % No need to cleanup h
 
