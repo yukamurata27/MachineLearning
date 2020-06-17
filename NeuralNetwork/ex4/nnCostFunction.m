@@ -68,8 +68,8 @@ end
 % Feedforward propagation
 
 % From layer 1 (input) to layer 2 (hidden)
-X = [ones(m,1) X];
-a = sigmoid(X * Theta1'); % row = each example | col = a's for the example
+X1 = [ones(m,1) X];
+a = sigmoid(X1 * Theta1'); % row = each example | col = a's for the example
 
 % From layer 2 (hidden) to layer 3 (output)
 a = [ones(m,1) a];
@@ -88,10 +88,37 @@ J = J + regularization;
 
 % Part 2 %
 
+D1 = zeros(hidden_layer_size,1);
+D2 = zeros(hidden_layer_size,1);
 
-% You need to return the following variables correctly 
-Theta1_grad = zeros(size(Theta1));
-Theta2_grad = zeros(size(Theta2));
+% For each example
+for t = 1:m
+    % A) Feedforward propagation
+
+    a1 = [1; X(t,:)'];
+    z2 = Theta1 * a1;
+    a2 = sigmoid(z2);
+
+    a2 = [1; a2];
+    z3 = Theta2 * a2;
+    a3 = sigmoid(z3);
+
+    % B) Backpropagation
+
+    % Get errors in layer 3
+    d3 = a3 - y_mat(t,:)';
+    
+    % Get errors in layer 2
+    mult = Theta2' * d3;
+    d2 = mult(2:end) .* sigmoidGradient(z2);
+    
+    % C) Accumulate the gradient
+    D1 = D1 + d2 * a1';
+    D2 = D2 + d3 * a2';
+end
+
+Theta1_grad = D1 / m;
+Theta2_grad = D2 / m;
 
 % =========================================================================
 

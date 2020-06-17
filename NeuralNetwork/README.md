@@ -66,6 +66,41 @@ g = sigmoid(z) .* (1 - sigmoid(z));
 epsilon_init = 0.12;
 W = rand(L_out, 1 + L_in) * 2 * epsilon_init - epsilon_init;
 ```
+#### 6) Backpropagation
+```
+D1 = zeros(hidden_layer_size,1);
+D2 = zeros(hidden_layer_size,1);
+
+% For each example
+for t = 1:m
+    % A) Feedforward propagation
+
+    a1 = [1; X(t,:)'];
+    z2 = Theta1 * a1;
+    a2 = sigmoid(z2);
+
+    a2 = [1; a2];
+    z3 = Theta2 * a2;
+    a3 = sigmoid(z3);
+
+    % B) Backpropagation
+
+    % Get errors in layer 3
+    d3 = a3 - y_mat(t,:)';
+    
+    % Get errors in layer 2
+    mult = Theta2' * d3;
+    d2 = mult(2:end) .* sigmoidGradient(z2);
+    
+    % C) Accumulate the gradient
+    D1 = D1 + d2 * a1';
+    D2 = D2 + d3 * a2';
+end
+
+Theta1_grad = D1 / m;
+Theta2_grad = D2 / m;
+```
+
 
 ## Assignment Link
 - [Neural Network Learning](https://www.coursera.org/learn/machine-learning/programming/AiHgN/neural-network-learning) 
