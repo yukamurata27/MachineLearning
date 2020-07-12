@@ -15,7 +15,14 @@ X_poly = zeros(numel(X), p);
 %
 % 
 
+X_poly(:,1) = X; % size m × 1
 
+for i = 2:p
+    
+    % polynomial regression
+    X_poly(:,i) = X .* X_poly(:,(i-1));
+    
+end
 
 
 
