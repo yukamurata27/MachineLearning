@@ -22,7 +22,7 @@
 
 
 ## Additional Data
-- vocab.txt (for vocabulary List)
+- vocab.txt (for vocabulary list)
 
 
 ## Dependencies
@@ -37,6 +37,10 @@
 ```
 ex6
 ```
+or
+```
+ex6_spam
+```
 
 
 ## Development Flow on Sample 2D Dataset
@@ -47,7 +51,7 @@ ex6
 C = 1  
 ![C = 1](img/c=1.jpg)  
 C = 100  
-![C = 100](img/c=1.jpg)  
+![C = 100](img/c=100.jpg)  
 C = 1000  
 ![C = 1000](img/c=1000.jpg)  
 
@@ -98,21 +102,21 @@ sigma = valueList(j);
 #### 1) Pre-process email contents
 Normalize features such as upper/lower case, HTML, URLs, email address, etc.
 - Before pre-processing  
-![Before pre-processed email](img/email_before.jpg)  
+![Before pre-processed email](img/email_before.png)  
 - After pre-processing  
-![After pre-processed email](img/email_after.jpg) 
+![After pre-processed email](img/email_after.png) 
 
 #### 2) Replace vocabularies with indices
 Look up each word in the email from the vocabulary list, and replace with its index if found.
 ```
 for i = 1:length(vocabList)
-        if (strcmp(str, vocabList{i}))
-            word_indices = [word_indices ; i];
-        end
+    if (strcmp(str, vocabList{i}))
+        word_indices = [word_indices ; i];
     end
+end
 ```
 After processing
-![Word indices](img/word_indices.jpg)
+![Word indices](img/word_indices.png)
 #### 3) Generate a vector of features
 ```
 x = zeros(n, 1);
