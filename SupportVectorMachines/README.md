@@ -115,7 +115,7 @@ for i = 1:length(vocabList)
     end
 end
 ```
-After processing
+After processing  
 ![Word indices](img/word_indices.png)
 #### 3) Generate a vector of features
 ```
