@@ -20,7 +20,7 @@
 
 ## Usage
 #### 1) Open MATLAB
-#### 2) Open the ex6 folder in MATLAB
+#### 2) Open the ex7 folder in MATLAB
 #### 3) In the terminal window, execute:  
 ```
 ex7
