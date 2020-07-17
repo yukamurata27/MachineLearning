@@ -8,6 +8,7 @@ This contains programming assignments for the Machine Learning course from Stanf
 #### 4) [Neural Network](./NeuralNetwork)
 #### 5) [Regularized Linear Regression](./RegularizedLinearRegression)
 #### 6) [Support Vector Machines](./SupportVectorMachines)
+#### 7) [K-Means Clustering and PCA](./K-MeansClustering&PCA)
 
 ## Environment
 - macOS Catalina (version 10.15.4)
@@ -15,7 +16,6 @@ This contains programming assignments for the Machine Learning course from Stanf
 
 ## To-Do
 - [ ] Add mathematical formulas of each algorithm for better understanding
-- [ ] Apply regularization to gradient descent (linear regression)  
 - [ ] Apply regularization to normal equation  (linear regression)  
 - [ ] More pre-processing for SVM (see its page for more)
 
