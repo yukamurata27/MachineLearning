@@ -9,6 +9,7 @@ This contains programming assignments for the Machine Learning course from Stanf
 #### 5) [Regularized Linear Regression](./RegularizedLinearRegression)
 #### 6) [Support Vector Machines](./SupportVectorMachines)
 #### 7) [K-Means Clustering and PCA](./K-MeansClustering&PCA)
+#### 8) [Anomaly Detection and Recommender Systems](./AnomalyDetection&RecommenderSystems)
 
 ## Environment
 - macOS Catalina (version 10.15.4)
