@@ -64,7 +64,7 @@ end
 ```
 
 #### 5) Show classified anomalies
-![Classified Anomalies](img/data1-classified)
+![Classified Anomalies](img/data1-classified.jpg)
 
 
 ## Development Flow (Collaborative Filtering)
