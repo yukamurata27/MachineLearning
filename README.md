@@ -1,6 +1,9 @@
 # Machine Learning
 This contains programming assignments for the Machine Learning course from Stanford University on Coursera.
 
+## Certificate
+This [certificate](https://coursera.org/share/f0c7c418d5abbb727186014d47bd5511) was earned in August 3, 2020.
+
 ## Algorithms
 #### 1) [Linear Regression](./LinearRegression)
 #### 2) [Logistic Regression](./LogisticRegression)
